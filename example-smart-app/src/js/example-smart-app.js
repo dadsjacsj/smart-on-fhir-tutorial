@@ -87,22 +87,22 @@
 
 
           // Cerner SoF Tutorial Observations
-          p.height = getQuantityValueAndUnit(height[0]);
+      //    p.height = getQuantityValueAndUnit(height[0]);
 
-          if (typeof systolicbp != 'undefined')  {
-          p.systolicbp = systolicbp;
-           }
+        //  if (typeof systolicbp != 'undefined')  {
+        //  p.systolicbp = systolicbp;
+          // }
 
-           if (typeof diastolicbp != 'undefined') {
-             p.diastolicbp = diastolicbp;
-           }
+          // if (typeof diastolicbp != 'undefined') {
+           //  p.diastolicbp = diastolicbp;
+          // }
 
-          p.hdl = getQuantityValueAndUnit(hdl[0]);
-          p.ldl = getQuantityValueAndUnit(ldl[0]);
-          console.log('p:');
-          console.log(p);
-          ret.resolve(p);
-        });
+          //p.hdl = getQuantityValueAndUnit(hdl[0]);
+         // p.ldl = getQuantityValueAndUnit(ldl[0]);
+         // console.log('p:');
+         // console.log(p);
+          //ret.resolve(p);
+        //});
       } else {
         onError();
       }
