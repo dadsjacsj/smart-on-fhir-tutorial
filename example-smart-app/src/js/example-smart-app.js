@@ -40,11 +40,15 @@
 
         $.when(pt, obv).fail(onError);
 
-       // $.when(pt, obv).done(function(patient, obv) {
-         // var byCodes = smart.byCodes(obv, 'code');
-         // console.log("byCodes:");
-         // console.log(byCodes('26478-8'));
-         // console.log(byCodes('2345-7'));
+        $.when(pt, obv).done(function(patient, obv) {
+          var byCodes = smart.byCodes(obv, 'code');
+          console.log("byCodes:");
+          console.log(byCodes('8302-2'));
+          console.log(byCodes('8462-4'));
+          console.log(byCodes('8480-6'));
+          console.log(byCodes('2085-9'));
+          console.log(byCodes('2089-1'));
+          console.log(byCodes('55284-4'));
 
           var gender = patient.gender;
 
